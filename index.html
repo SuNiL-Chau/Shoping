@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <title>shoping</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
@@ -15,10 +15,10 @@
 
 <body>
     <!-- This is the first Bar of login & social media -->
-    <div class="container-fluid blacktop">
+    <div class="container-fluid col-md-12 blacktop">
         <div class="row">
             <!-- Login div -->
-            <div class="col-*-* leftlog">
+            <div class="col-md-4 leftlog">
                 <ul>
                     <li>
                         <a href="login.html">Login</a>
@@ -32,7 +32,7 @@
                 </ul>
             </div>
             <!-- Social Media div -->
-            <div class="col-*-* rightlog">
+            <div class="col-md-4 rightlog">
                 <ul>
                     <li class="linkedin" onclick="linkedin()">
                         <i style='font-size:24px' class='fab'>&#xf08c;</i>
@@ -51,21 +51,36 @@
     <div class="container-fluid secondtop">
         <div class="row">
             <div class="col logo"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <!-- Menu -->
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">HOME</a>
+                    <a href="#">SALES</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+            <span class="menutoggle" onclick="openNav()">&#9776;</span>
+            <!-- Menu end -->
         </div>
     </div>
     <!-- Main content starts from here -->
     <div class="container-fluid bigscreen">
-        <div class="row">
-            <div class="col-*-*"></div>
+        <div class="row ">
+            <div class="col-md-4 "></div>
         </div>
+        <a class="arrow-wrap " href="#trend ">
+            <span class="arrow "></span>
+        </a>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/my.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+    <script src="js/my.js "></script>
+    <script src="js/minifiedswipe.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
 </body>
 
 </html>
