@@ -1,5 +1,5 @@
 body {
-    cursor: url(/imgs/cursor2.cur);
+    cursor: url(../imgs/cursor2.svg), auto;
 }
 
 .blacktop {
@@ -11,13 +11,16 @@ body {
 
 .leftlog {
     float: left;
-    margin-left: 180px;
+    margin-left: 0px;
     margin-top: 4px;
+    text-align: center;
 }
 
 .leftlog ul {
     list-style: none;
     width: 300px;
+    position: relative;
+    left: 70px;
 }
 
 .leftlog ul li {
@@ -222,6 +225,33 @@ body {
         font-size: 40px;
         top: 15px;
         right: 35px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .blacktop {
+        height: 58px;
+    }
+    .rightlog ul {
+        position: relative;
+        right: 150px !important;
+        top: 25px !important;
+    }
+    .leftlog ul {
+        position: relative;
+        left: 0px;
+    }
+}
+
+
+@media screen and (max-width:942px) {
+    .blacktop {
+        height: 58px;
+    }
+    .rightlog ul {
+        position: relative;
+        right: 120px;
+        top: 0px;
     }
 }
 
